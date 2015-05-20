@@ -1,0 +1,32 @@
+h1{
+    color: #d6f9ff;
+    font-size: 30pt;
+    font-family: sans-serif;
+}
+
+#teste h1{
+    color:#ff6600;
+    font-size: 15pt;
+    font-family: helvetica;
+}
+
+table tr td{
+	color: #ff6600;
+}
+
+table{
+	border-style: dotted;
+	border-width: 1px;
+	border-color: #ff6600;
+}
+
+table thead tr td{
+	font-size: 20pt;
+	background-color: #ff6650;
+}
+
+table tfoot tr{
+	font-size: 10pt;
+	background-color: #e1f0f1; 
+	color: #2657b2;
+}
