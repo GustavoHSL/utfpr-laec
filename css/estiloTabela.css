@@ -17,7 +17,7 @@ table tr td{
 table{
 	border-style: dotted;
 	border-width: 1px;
-	border-color: #ff6600;
+	width: 100%;
 }
 
 table thead tr td{
@@ -25,8 +25,15 @@ table thead tr td{
 	background-color: #ff6650;
 }
 
-table tfoot tr{
+table tfoot tr td{
 	font-size: 10pt;
 	background-color: #e1f0f1; 
 	color: #2657b2;
+	text-align: center;
+}
+
+.tabela {
+	background-color: gray;
+	margin-left: 25%;
+	margin-right: 25%;
 }
