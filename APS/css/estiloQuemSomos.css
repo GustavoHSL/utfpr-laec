@@ -1,0 +1,227 @@
+/*Começa css quemSomos, vai até a linha: 123*/
+#fotos{
+    position: absolute;
+    top: 30%;
+    left: 10px;
+    right: 10px;
+    float: left;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: black;
+    margin-top: -15px;
+}
+
+
+#elias{
+    float: left;
+    height: 50%;
+}
+
+#elias #social{
+    right: 10%;
+}
+
+#social{
+    position: relative;
+    float: left;
+    top: 120px;
+    visibility: hidden;
+}
+
+#social1{
+    position: relative;
+    float: left;
+    top: 120px;
+    visibility: hidden;
+}
+
+
+#gustavo #social1{
+    right: 90%;
+}
+
+#gustavo{
+    float: right;
+    height: 50%;
+}
+
+#texto{
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    right: 40px;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    text-align: justify;
+}
+
+.pic{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    max-width: 400px;
+    max-height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin: -20px 100px 0 120px;   
+    float: left;
+    display: inline-block;
+
+    animation: anima 0.1s;
+    -webkit-animation: anima 0.1s;
+
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+}
+
+.pic-caption{
+    cursor: pointer;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    background: rgba(000,000,000, 0.80);
+    opacity:0;
+    padding: 10px;
+    text-align:justify;
+}
+
+.pic-caption h1{
+    text-align: center;
+}
+
+.pic-image{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.pic:hover .pic-image{
+    -webkit-transform: scale(-1);
+    transform: scale(1);
+}
+/*All classes with same attribute*/
+a ,a:hover, .pic .pic-image, .pic-caption, .pic:hover .pic-caption, .pic:hover img{
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2 ease;  
+}
+
+/*Effects in Caption*/
+.pic:hover .bottom-to-top
+{
+    opacity: 1;
+}
+/*Bottom to Top*/
+.bottom-to-top{
+    top:50%;    
+    left:0;
+}
+
+.pic:hover .bottom-to-top{
+    top:0;
+}
+
+@keyframes anima{
+    from{
+        margin-top: -50px;
+        opacity: 0;
+        -webkit-opacity: 0;
+    }
+    to{
+        margin: auto;
+        opacity: 1;
+        -webkit-opacity: 1;
+    }
+}
+
+@-webkit-keyframes anima{
+    from{
+        margin-left: -20px;
+        opacity: 0;
+        -webkit-opacity: 0;
+    }
+    to{
+        margin-left: 10px;
+        opacity: 1;
+        -webkit-opacity: 1;
+    }
+}
+
+/*Termina css quemSomos*/
+
+/*Começa css para rodapé até linha: 202*/
+#rodape{
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 110%;
+    width: 100%;
+    height: 200px;
+    text-align:center;
+    background: #05046b;
+}
+
+#facebook, #redesSociais{
+    position: absolute;
+    top: 4%;
+    width: 250px;
+    height: 90%;
+}
+
+#facebook{
+    left: 10%;
+}
+
+#redesSociais{
+    left: 40%;
+    top: 10px;
+}
+
+#endereco{
+    left: 70%;
+    text-align: left;
+    top: 32px;
+    font-family:"Arimo";
+    color: white;
+    font-size: 12px;
+    float:right;
+    position: absolute;
+    width: 250px;
+}
+
+ul.menu{
+    float:left;
+    padding-left:30px;
+    font-family:"Arimo";
+    font-size: 14px;
+    text-align: left;
+}
+
+ul.menu li{
+    color: white;
+    text-decoration:none;
+}
+
+ul.menu ul{
+    padding-left:10px;
+    margin-top:10px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+ul.menu li a{
+    color: white;
+    text-decoration:none;
+}
+
+ul.menu li a:hover{
+    text-decoration:underline;
+}
+
+.fb-page{
+    top: 25px;
+    box-shadow: 1px 5px 25px #143869;
+}
+/*Termina css Rodapé*/

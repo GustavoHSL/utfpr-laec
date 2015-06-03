@@ -1,0 +1,283 @@
+/*css para header até a linha: 173*/
+.fontes{ 
+    text-shadow: 2px 2px 0 #000e71;
+    color: white;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+#topo{
+    position: relative;
+    left: 0px;
+    top: -70px;
+    width: 100%;
+    height: 200px;
+    text-align:center;
+    background: #0613a5; /* Old browsers */
+    background: -moz-linear-gradient(top,  #0613a5 0%, #05046b 87%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0613a5), color-stop(87%,#05046b)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #0613a5 0%,#05046b 87%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #0613a5 0%,#05046b 87%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #0613a5 0%,#05046b 87%); /* IE10+ */
+    background: linear-gradient(to bottom,  #0613a5 0%,#05046b 87%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0613a5', endColorstr='#05046b',GradientType=0 ); /* IE6-9 */
+
+}
+
+#logo{
+    padding-left: 30px;
+    padding-top: 10px;
+    position:absolute;
+    z-index: 2;
+}
+
+#menu{
+    background-color: transparent;
+    width: 98.8%;
+    height: 40px;
+    position: absolute;
+    top: 160px;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #cccccc;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    box-shadow: 10px;
+    z-index: 1;
+}
+
+#contato{
+    background-image: url('img/contato.png');
+    position: absolute;
+    left: 70%;
+    top: 25%;
+    width: 240px;
+    height: 70px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+
+#botao{
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 65%;
+}
+
+#botao input{
+    text-shadow: 2px 2px 0 #000000;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    border:0;
+    border-left:3px solid #000000;
+    border-right:3px solid #000000;
+    border-width: 0px;
+    border-color: #cccccc;
+    background-color: transparent; 
+    width:100%;
+    height:36px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+#botao input:hover{
+    text-shadow: 1px 1px 0 #E0E0E0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-left-color: white;
+    border-right-color: white;
+    background-color: white;
+    color: #12058e;
+}
+
+.bar{
+    float: left;
+    width: 190px;
+}
+
+#pesquisa{
+    position: absolute;
+    top: 3px;
+    left: 75%;
+    width: 250px;
+    height: 34px;
+    border: 1px solid white;
+    border-radius: 10px;
+
+}
+
+#pesquisa * {
+    background: transparent;
+    border: none;
+}
+
+#pesquisa input {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    color: white;
+    display: block;
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    height: 30px;
+    line-height: 40px;
+    width: 215px;
+    border-radius: 10px;
+}
+
+#pesquisa input:focus{
+    background-color: white;
+    color: #12058e; 
+}
+
+/*Cor do placeholder*/
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: white;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: white;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: white;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: white;
+}
+
+#pesquisa button {
+    display: block;
+    margin-left: 210px;
+}
+
+.fixar {
+    position: fixed;
+    margin-top: 0px !important;
+}
+
+#logotipo{
+    position: absolute;
+    left: 30px;
+    top: 5px;
+    visibility: hidden;
+}
+/*Termina css para header*/
+
+/*Começa css para conteudo, até linha: 204*/
+#conteudo{
+    position: absolute;
+    top: 35%;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#promocao .status{
+    border: 1px solid;
+    border-radius: 0px 10px 10px 0px; 
+    left: 0px;
+    width: 20%;
+    height: 30px;
+    position: relative;
+    background-color: #05046b;
+}
+
+#outros .status{
+    border: 1px solid;
+    border-radius: 0px 10px 10px 0px; 
+    left: 0px;
+    width: 20%;
+    height: 30px;
+    position: relative;
+    background-color: #05046b;
+}
+
+#outros .status{
+    position: absolute;
+    top: 44.5%;
+}
+/*Termina css conteudo*/
+
+/*Começa css para rodapé até linha: 281*/
+#rodape{
+    float: left;
+    position: relative;
+    left: 0px;
+    top: 100%;
+    width: 100%;
+    height: 200px;
+    text-align:center;
+    background: #05046b;
+}
+
+#facebook, #redesSociais{
+    position: absolute;
+    top: 4%;
+    width: 250px;
+    height: 90%;
+}
+
+#facebook{
+    left: 10%;
+}
+
+#redesSociais{
+    left: 40%;
+    top: 10px;
+}
+
+#endereco{
+    left: 70%;
+    text-align: left;
+    top: 32px;
+    font-family:"Arimo";
+    color: white;
+    font-size: 12px;
+    float:right;
+    position: absolute;
+    width: 250px;
+}
+
+ul.menu{
+    float:left;
+    padding-left:30px;
+    font-family:"Arimo";
+    font-size: 14px;
+    text-align: left;
+}
+
+ul.menu li{
+    color: white;
+    text-decoration:none;
+}
+
+ul.menu ul{
+    padding-left:10px;
+    margin-top:10px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+ul.menu li a{
+    color: white;
+    text-decoration:none;
+}
+
+ul.menu li a:hover{
+    text-decoration:underline;
+}
+
+.fb-page{
+    top: 25px;
+    box-shadow: 1px 5px 25px #143869;
+}
+
+/*Termina css Rodapé*/

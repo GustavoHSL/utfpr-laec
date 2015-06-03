@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Contato - Jorge Veículos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="css/estiloContato.css" rel="stylesheet" type="text/css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/jquery.mask.min.js" type="text/javascript"></script>
+        <script language="javascript" src="js/scrollPage.js"></script>
+    </head>
+    <body>
+        <div id="topo"> 
+            <div id="logo"> 
+                <img title="Jorge Veículos" src="img/logo2.png" height="185" width="200" />
+            </div>
+            <div id="menu">
+                <div id="botao">
+                    <div class="bar">
+                        <input type="submit" name="btnInicio" value="Início" onclick="location.href = 'index.html'"/>
+                    </div>
+                    <div class="bar">
+                        <input type="submit" name="btnQuemSomos" value="Quem Somos" onclick="location.href = 'quemSomos.html'"/>
+                    </div>
+                    <div class="bar">
+                        <input type="submit" name="btnVeiculos" value="Veículos" />
+                    </div>
+                    <div class="bar">
+                        <input type="submit" name="btnContato" value="Contato" onclick="location.href = 'contato.xhtml'"/>
+                    </div>
+                </div>
+                <div id="logotipo">
+                    <label class="fontes" onclick="location.href = 'index.html'"> Jorge Veículos </label>>
+                </div>
+                <div id="pesquisa">
+                    <input type="text" name="txtPesquisa" placeholder="Carro, marca, ano..." />
+                    <button type="button" id="btnPesquisa"><img src="img/pesquisa.png" alt="Pesquisar" /></button>
+                </div> 
+            </div>
+            <div id="contato">
+                <img title="Contato" src="img/contato.png" />
+            </div>
+        </div>
+        <div class="fundoContato">
+            <form action="" method="post">
+                <div id="cabec">
+                    <h1 >Entre em contato conosco</h1>
+                </div>
+                <div id="direita">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14319.879713127759!2d-52.684639623278805!3d-26.197656493079617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e5533f62e22c55%3A0x74c614e61d62d7ce!2sPato+Branco+-+PR!5e0!3m2!1spt-BR!2sbr!4v1433167072769" width="530" height="400" frameborder="0" style="border:0"></iframe>
+                </div>
+                <div id="esquerda">
+                    <div class='name'>
+                        <input class='first' placeholder='Nome' type='text' required="" />
+                        <input class='last' placeholder='Sobrenome' type='text' required=""/>
+                    </div>
+                    <div class='contact'>
+                        <input class='email' placeholder='E-mail' type='email' required=""/>
+                        <input id='campoTelefone' class='telefone' placeholder='Telefone' type="tel" required=""/>
+                        <input class='cidade' placeholder='Cidade' type='text' required=""/>
+                        <script>
+                            jQuery(function ($) {
+                                $("#campoTelefone").mask("(99) 9999-9999");
+                            });
+                        </script>
+                    </div>
+                    <div class='message'>
+                        <textarea placeholder='Escreva aqui!' required=""></textarea>
+                    </div>
+                </div>
+                <div id="rodapeHeader">
+                    <button>Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div id="rodape">
+            <div id="facebook">
+                <div id="fb-root"></div>
+                <script>(function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id))
+                            return;
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>
+                <div class="fb-page" 
+                     data-href="https://www.facebook.com/jorgebayerveiculos" 
+                     data-width="180" 
+                     data-height="100" 
+                     data-hide-cover="false" 
+                     data-show-facepile="true" 
+                     data-show-posts="false">
+                    <div class="fb-xfbml-parse-ignore">
+                        <blockquote cite="https://www.facebook.com/jorgebayerveiculos">
+                            <a href="https://www.facebook.com/jorgebayerveiculos">
+                                Jorge Veiculos
+                            </a>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div id="redesSociais">
+                <ul class="menu">
+                    <li><h3>Jorge Veículos</h3>
+                        <ul>
+                            <li><a href="index.html" class="portfolio" title="inicio">Início</a></li>
+                            <li><a href="quemSomos.html" class="quem-faz" title="quemSomos">Quem Somos</a></li>
+                            <li><a href="" class="servicos" title="veiculos">Veículos</a></li>
+                            <li><a href="contato.html" class="contato" title="Contato">Contato</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="endereco">
+                <h3>Onde Estamos</h3>
+                Via do Conhecimento, Km 1 CEP 85503-390
+                <br>
+                Pato Branco - PR - Brasil
+            </div>
+        </div>
+    </body>
+</html>

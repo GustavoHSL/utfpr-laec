@@ -1,0 +1,86 @@
+.pic{
+    left: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    max-width: 300px;
+    max-height: 200px;
+    position: relative;
+    overflow: hidden;
+    margin: 50px;   
+    float: left;
+    display: inline-block;
+
+    animation: anima 0.1s;
+    -webkit-animation: anima 0.1s;
+
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+}
+
+.pic-caption{
+    cursor: pointer;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    background: rgba(000,000,000, 0.80);
+    opacity:0;
+    padding: 10px;
+    text-align:center;
+}
+
+.pic-image{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.pic:hover .pic-image{
+    -webkit-transform: scale(-1);
+    transform: scale(1);
+}
+/*All classes with same attribute*/
+a ,a:hover, .pic .pic-image, .pic-caption, .pic:hover .pic-caption, .pic:hover img{
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2 ease;  
+}
+
+/*Effects in Caption*/
+.pic:hover .bottom-to-top
+{
+    opacity: 1;
+}
+/*Bottom to Top*/
+.bottom-to-top{
+    top:50%;    
+    left:0;
+}
+
+.pic:hover .bottom-to-top{
+    top:0;
+}
+
+@keyframes anima{
+    from{
+        margin-top: -50px;
+        opacity: 0;
+        -webkit-opacity: 0;
+    }
+    to{
+        margin: auto;
+        opacity: 1;
+        -webkit-opacity: 1;
+    }
+}
+
+@-webkit-keyframes anima{
+    from{
+        margin-left: -20px;
+        opacity: 0;
+        -webkit-opacity: 0;
+    }
+    to{
+        margin-left: 10px;
+        opacity: 1;
+        -webkit-opacity: 1;
+    }
+}

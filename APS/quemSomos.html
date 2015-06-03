@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Quem Somos - Jorge Veículos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/estiloPage.css" rel="stylesheet" type="text/css" />
+        <link href="css/estiloQuemSomos.css" rel="stylesheet" type="text/css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script language="javascript" src="js/scrollPage.js"></script>
+    </head>
+    <body>
+        <div id="topo"> 
+            <div id="logo"> 
+                <img title="Jorge Veículos" src="img/logo2.png" height="185" width="200" />
+            </div>
+            <div id="menu">
+                <div id="botao">
+                    <div class="bar">
+                        <input type="submit" name="btnInicio" value="Início" onclick="location.href = 'index.html'"/>
+                    </div>
+                    <div class="bar">
+                        <input type="submit" name="btnQuemSomos" value="Quem Somos" onclick="location.href = 'quemSomos.html'"/>
+                    </div>
+                    <div class="bar">
+                        <input type="submit" name="btnVeiculos" value="Veículos" />
+                    </div>
+                    <div class="bar">
+                        <input type="submit" name="btnContato" value="Contato" onclick="location.href = 'contato.html'"/>
+                    </div>
+                </div>
+                <div id="logotipo">
+                    <label class="fontes" onclick="location.href = 'index.html'"> Jorge Veículos </label>
+                </div>
+                <div id="pesquisa">
+                    <input type="text" name="txtPesquisa" placeholder="Carro, marca, ano..." />
+                    <button type="button" id="btnPesquisa"><img src="img/pesquisa.png" alt="Pesquisar" /></button>
+                </div> 
+            </div>
+            <div id="contato">
+                <img title="Contato" src="img/contato.png" />
+            </div>
+        </div>
+        <div id="fotos">
+            <script>
+                function showElement() {
+                    document.getElementById("social").style.visibility = "visible";
+                    document.getElementById("social1").style.visibility = "visible";
+                }
+                function hideElement() {
+                    document.getElementById("social").style.visibility = "hidden";
+                    document.getElementById("social1").style.visibility = "hidden";
+                }
+                document.getElementById("fotos").addEventListener("mouseover", showElement, false);
+                document.getElementById("fotos").addEventListener("mouseout", hideElement, false);
+            </script>
+            <h1>Desenvolvedores</h1>
+            <div id="elias">
+                <div class="pic">
+                    <img title="Elias" src="img/elias.jpg" class="pic-image" width="400" />
+                    <span class="pic-caption bottom-to-top">
+                        <h1>Elias Ricardo Vieira</h1>
+                        <p> Cursando o 4º período de Analise e Desenvolvimento de Sistemas pela UTFPR, Campús Pato Branco, começou sua experincia profissional aos 14 anos em um mercado local.</p> 
+                        <p>Porém seu interesse pela tecnoliga vinha desde a infancia, onde com 10 anos, fez seu primeiro curso voltado para manutenção de computadores.</p> 
+                        <p>Aos 15 anos fez um curso voltado para desenvolvimento web. Sempre buscando novos conhecimentos, iniciou em uma empresa de desenvolvimento de software, aonde aprendeu e começou a pegar gosto pela "coisa". Atualmente, está envolvido com a prefeitura municipal.</p>
+                    </span>
+                </div>
+                <div id="social">
+                    <div>
+                        <a href="https://www.facebook.com/EliasRicardoVieira" target="_blank">
+                            <img src="img/icon/fb.png" 
+                                 onmouseover="this.src = 'img/icon/fbh.png'" 
+                                 onmouseout="this.src = 'img/icon/fb.png'" 
+                                 width="20"
+                                 title="Facebook"/>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://plus.google.com/u/0/104423213101491575363/posts" target="_blank">
+                            <img src="img/icon/google.png" 
+                                 onmouseover="this.src = 'img/icon/googleh.png'" 
+                                 onmouseout="this.src = 'img/icon/google.png'" 
+                                 width="30"
+                                 title="Google"/>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://twitter.com/eliasrvieira" target="_blank">
+                            <img src="img/icon/tt.png" 
+                                 onmouseover="this.src = 'img/icon/tth.png'" 
+                                 onmouseout="this.src = 'img/icon/tt.png'" 
+                                 width="30"
+                                 title="Twitter"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="gustavo">
+                <div class="pic">
+                    <img title="Gustavo" src="img/gustavo.jpg" class="pic-image" width="400"  />
+                    <span class="pic-caption bottom-to-top">
+                        <h1>Gustavo Henrique Lopes</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sapien velit, tristique ut mauris ut, auctor dapibus sem. Nam sit amet odio sodales, suscipit erat et, porta libero. Suspendisse egestas metus a diam gravida, sed viverra est vehicula. Sed bibendum mollis mi, varius finibus orci faucibus et. Morbi dictum tortor vel augue consequat, at luctus mi feugiat. Morbi ac nunc sem. Nullam ipsum sem, posuere vitae purus a, porttitor euismod arcu. Aliquam dui mauris, scelerisque sollicitudin lacus molestie, elementum porttitor lectus. Aliquam sed bibendum justo. Nullam lacinia orci a dui rutrum, eu pharetra ex venenatis. Donec ut quam tincidunt, ornare neque sed, pellentesque magna. Pellentesque eget velit sed leo consectetur vehicula. Quisque nibh nibh, laoreet quis enim et, sodales blandit magna. Fusce sodales justo nec risus finibus, ac consequat felis tristique. Maecenas rutrum velit vel sagittis feugiat. Aenean non dolor est.
+
+                            Cras sem tortor, pulvinar a ligula a, blandit eleifend mauris. Etiam iaculis volutpat est sollicitudin venenatis. Phasellus a lacus nibh. Vivamus id tortor nec enim ornare efficitur. Cras vitae tempus orci, et pretium nulla. Morbi euismod, justo ut pulvinar fringilla, urna justo varius nisi, in imperdiet quam eros rutrum risus. Cras elementum lacus eget porta feugiat. Integer nec tellus sit amet risus hendrerit venenatis. Suspendisse eu scelerisque dolor. In semper nulla elit, sed sollicitudin dui imperdiet vel. Pellentesque laoreet urna ipsum, vel hendrerit magna tempor vitae. Maecenas nec mollis turpis. Nullam pretium urna facilisis posuere maximus. In vulputate ipsum a ornare ullamcorper. Aenean sed nulla finibus lectus molestie pellentesque. Etiam vel sollicitudin risus.
+                        </p>
+                    </span>
+                </div>
+                <div id="social1">
+                    <div>
+                        <a href="https://www.facebook.com/gustavohsl" target="_blank">
+                            <img src="img/icon/fb.png" 
+                                 onmouseover="this.src = 'img/icon/fbh.png'" 
+                                 onmouseout="this.src = 'img/icon/fb.png'" 
+                                 width="20"
+                                 title="Facebook"/>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://plus.google.com/u/0/104423213101491575363/posts" target="_blank">
+                            <img src="img/icon/google.png" 
+                                 onmouseover="this.src = 'img/icon/googleh.png'" 
+                                 onmouseout="this.src = 'img/icon/google.png'" 
+                                 width="30"
+                                 title="Google"/>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://twitter.com/eliasrvieira" target="_blank">
+                            <img src="img/icon/tt.png" 
+                                 onmouseover="this.src = 'img/icon/tth.png'" 
+                                 onmouseout="this.src = 'img/icon/tt.png'" 
+                                 width="30"
+                                 title="Twitter"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rodape">
+            <div id="facebook">
+                <div id="fb-root"></div>
+                <script>(function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id))
+                            return;
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>
+                <div class="fb-page" 
+                     data-href="https://www.facebook.com/jorgebayerveiculos" 
+                     data-width="180" 
+                     data-height="100" 
+                     data-hide-cover="false" 
+                     data-show-facepile="true" 
+                     data-show-posts="false">
+                    <div class="fb-xfbml-parse-ignore">
+                        <blockquote cite="https://www.facebook.com/jorgebayerveiculos">
+                            <a href="https://www.facebook.com/jorgebayerveiculos">
+                                Jorge Veiculos
+                            </a>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div id="redesSociais">
+                <ul class="menu">
+                    <li><h3>Jorge Veículos</h3>
+                        <ul>
+                            <li><a href="index.html" class="portfolio" title="inicio">Início</a></li>
+                            <li><a href="quemSomos.html" class="quem-faz" title="quemSomos">Quem Somos</a></li>
+                            <li><a href="" class="servicos" title="veiculos">Veículos</a></li>
+                            <li><a href="contato.html" class="contato" title="Contato">Contato</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="endereco">
+                <h3>Onde Estamos</h3>
+                Via do Conhecimento, Km 1 CEP 85503-390
+                <br>
+                Pato Branco - PR - Brasil
+            </div>
+        </div>
+    </body>
+</html>
